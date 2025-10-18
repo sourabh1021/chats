@@ -28,4 +28,3 @@ It demonstrates **CRUD operations** and dynamic rendering using **EJS**, along w
 
 ---
 
-## 📂 Folder Structure
