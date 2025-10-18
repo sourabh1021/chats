@@ -1,0 +1,132 @@
+/* ===== General Page Style ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 30px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #b0b0b0;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #217dbb;
+  transform: scale(1.05);
+}
+
+/* Create new chat button */
+form[action="/chats/new"] button {
+  background: #27ae60;
+  margin-bottom: 20px;
+}
+
+form[action="/chats/new"] button:hover {
+  background: #1e874b;
+}
+
+/* ===== Chat Card ===== */
+.chat {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.chat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Message Section ===== */
+.msg {
+  background: #f8f9fa;
+  padding: 12px 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.msg p {
+  margin: 0;
+  font-size: 20px;
+  color: #555;
+  font-style: bold;
+  font-weight: bolder;
+}
+
+/* ===== Buttons inside Chat ===== */
+.chat form {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.chat button {
+  margin-right: 10px;
+}
+
+/* Edit Button */
+.chat form[action*="/edit"] button {
+  background: #f39c12;
+}
+
+.chat form[action*="/edit"] button:hover {
+  background: #d68910;
+}
+
+/* Delete Button */
+.chat button.delete {
+  background: #e74c3c;
+}
+
+.chat button.delete:hover {
+  background: #c0392b;
+}
+
+/* ===== Date and Time ===== */
+.chat p:last-of-type {
+  font-size: 13px;
+  color: #666;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  .chat {
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}

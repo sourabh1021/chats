@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Chat</title>
+    <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+
+    <div class="New"> <!-- Using same card style as previous pages -->
+        <h2>Edit Chat: <%= chat._id %></h2>
+
+        <p>This chat was sent from 
+            <b><u><%= chat.from %></u></b> to 
+            <b><u><%= chat.to %></u></b>
+        </p>
+
+        <form action="/chats/<%= chat._id %>?_method=PATCH" method="post">
+            <textarea name="msg" rows="10"><%= chat.msg %></textarea>
+            <button type="submit">Update!</button>
+        </form>
+    </div>
+
+</body>
+</html>

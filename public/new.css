@@ -1,0 +1,100 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Container ===== */
+.New {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  width: 380px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.New:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Heading ===== */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* ===== Input Fields ===== */
+.New input[type="text"] {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.New input[type="text"]:focus {
+  border-color: #ff7e5f;
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.3);
+}
+
+/* ===== Button ===== */
+.New button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.New button:hover {
+  background: linear-gradient(135deg, #ff6333, #ffa15f);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 126, 95, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .New {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .New input[type="text"],
+  .New button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
