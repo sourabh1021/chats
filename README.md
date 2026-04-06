@@ -1,4 +1,4 @@
-# 📱 WhatsApp Clone (Node.js + Express + MongoDB)
+# 📱 Connectify (Node.js + Express + MongoDB)
 
 ## 📝 Description
 This is a simple **WhatsApp-like chat application** built with **Node.js**, **Express**, **MongoDB (Mongoose)**, and **EJS templates**.  
